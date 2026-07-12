@@ -1,17 +1,10 @@
 Relative vs Absolute path
-
 Relative path:
-
 "login.txt"
-
 Absolute path:
-
 "D:\\local_projects\\FileHandling2\\project1\\login.txt"
-
 abspath() converts the first into the second.
-
 Real-world scenario
-
 Suppose your project structure is:
 
 project/
@@ -21,13 +14,9 @@ project/
 │   └── users.txt
 
 Inside app.py:
-
 import os
-
 path = os.path.abspath("data/users.txt")
-
 print(path)
-
 Output:
 D:\project\data\users.txt
 Now your program knows the exact location.
@@ -52,9 +41,7 @@ Example:
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 This gets the folder where the Python file exists.
-
 Then:
-
 database = os.path.join(BASE_DIR, "data", "db.sqlite3")
 
 Frameworks like Django use this pattern.
