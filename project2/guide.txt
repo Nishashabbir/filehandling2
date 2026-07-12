@@ -29,37 +29,24 @@ path = os.path.abspath("data/users.txt")
 print(path)
 
 Output:
-
 D:\project\data\users.txt
-
 Now your program knows the exact location.
-
 Why developers use it
 1. Debugging paths
-
 Very common.
-
 print(os.path.abspath("config.json"))
-
 You can verify where Python is actually looking.
-
 2. Saving files reliably
 
 Example:
-
 log_path = os.path.abspath("logs/error.txt")
-
 Now logs always save using a full path.
-
 3. Passing paths to other programs
-
 Some libraries/tools need full paths:
 
 subprocess.run(["notepad.exe", os.path.abspath("notes.txt")])
 4. Working with current project directory
-
 Very common in real apps.
-
 Example:
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -78,7 +65,6 @@ os.getcwd()
 os.path.abspath("hello.txt")
 means:
 "If hello.txt were in the current directory, what would its full path be?"
-
 NOT:
 "Search my computer for hello.txt"
 
