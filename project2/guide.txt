@@ -71,23 +71,15 @@ Then:
 database = os.path.join(BASE_DIR, "data", "db.sqlite3")
 
 Frameworks like Django use this pattern.
-
 Important thing
-
 abspath() depends on:
-
 os.getcwd()
-
 (current working directory)
-
 os.path.abspath("hello.txt")
-
 means:
-
 "If hello.txt were in the current directory, what would its full path be?"
 
 NOT:
-
 "Search my computer for hello.txt"
 
 Think of it like this
